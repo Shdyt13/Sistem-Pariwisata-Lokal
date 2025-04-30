@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jejak Pulau Bintan</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo-wrapper">
+      <img src="image/logo.png" alt="Logo Jejak Pulau Bintan" class="logo-img">
+      <div class="logo-text">Jejak Pulau Bintan</div>
+    </div>
+    <nav class="navbar">
+      <a href="index.html" class="nav-link active">HOME</a>
+      <a href="about.html" class="nav-link">ABOUT US</a>
+      <a href="Destinations.html" class="nav-link active">DESTINATIONS</a>
+      <a href="contact.html" class="nav-link">CONTACT</a>
+      <a href="login.html">
+        <button class="login-btn">LOGIN</button>
+      </a>
+      
+    </nav>
+  </header>
+
+  <section class="hero">
+    
+    <div class="search-box">
+      <input type="text" placeholder="Cari..." class="search-input">
+      <button class="search-button"><i class="fas fa-search"></i></button>
+    </div>
+  
+    <!-- Wrapper untuk banyak slide -->
+      <div class="hero-slider">
+        <div class="hero-slide active">
+          <div class="hero-background" style="background-image: url('img/destinasi1.png');"></div>
+          <div class="hero-content">
+            <div class="hero-textbox">
+              <h1>Pulau Penyengat</h1>
+              <h3>Sejarah dan Budaya Melayu</h3>
+              <p>Pulau Penyengat di Tanjungpinang, Kepulauan Riau, adalah surga kecil yang sarat sejarah dan budaya Melayu. Di sini berdiri megah Masjid Raya Sultan Riau yang dibangun dari putih telur, makam para raja Riau-Lingga, hingga Kompleks Istana Kantor yang menyimpan jejak kerajaan. Tak hanya wisata religi dan sejarah, pulau ini juga jadi pusat wisata edukasi—mengenalkan langsung kekayaan budaya Melayu kepada generasi muda.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="hero-slide">
+          <div class="hero-background" style="background-image: url('img/destinasi2.png');"></div>
+          <div class="hero-content">
+            <div class="hero-textbox">
+              <h1>Lagoi Bay</h1>
+              <h3>Wisata Pantai</h3>
+              <p>Lagoi Bay adalah kawasan wisata premium di Pulau Bintan yang menyajikan pantai eksotis, resort bertaraf internasional, dan berbagai aktivitas seru seperti bermain di Crystal Lagoon, snorkeling, golf, hingga wisata edukatif di eco farm. Dikelola oleh BRC dan mudah diakses dari Singapura, Lagoi Bay jadi destinasi unggulan dan pusat investasi pariwisata di Kepulauan Riau.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="hero-slide">
+          <div class="hero-background" style="background-image: url('img/destinasi3.png');"></div>
+          <div class="hero-content">
+            <div class="hero-textbox">
+              <h1>Gunung Bintan</h1>
+              <h3>Petualangan Alam</h3>
+              <p>Gunung Bintan, yang terletak di Kampung Bekapur, Desa Bintan Buyu, merupakan bukit setinggi 340 meter di atas permukaan laut dan menjadi titik tertinggi di Pulau Bintan. Meski lebih menyerupai bukit, tempat ini menawarkan jalur pendakian yang menantang namun ramah untuk pemula, serta pemandangan alam memukau dari puncaknya yang menghadap ke berbagai arah, menjadikannya destinasi favorit bagi pecinta alam dan petualang.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-slide">
+          <div class="hero-background" style="background-image: url('img/destinasi4.png');"></div>
+          <div class="hero-content">
+            <div class="hero-textbox">
+              <h1>Kelong Bintan</h1>
+              <h3>Atas Laut dengan Panorama Alam</h3>
+              <p>Kelong di Bintan adalah penginapan terapung unik yang menawarkan pengalaman menginap di atas laut dengan harga terjangkau, mulai Rp 170.000 per malam. Wisatawan bisa menikmati pemandangan laut, memancing, snorkeling, atau sekadar bersantai di suasana tenang, menjadikan kelong pilihan ideal untuk liburan bernuansa alam dan budaya pesisir.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- Panah -->
+  <button class="left-arrow">
+    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="1 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="15 18 9 12 15 6"></polyline>
+    </svg>
+  </button>
+  <button class="right-arrow">
+    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="-1 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </button>
+  </section>
+  
+  <script src="js/main.js"></script>
+  
+  <section class="categories">
+    <div class="category-tab">
+      <button class="tab active">Semua</button>
+      <button class="tab">Hiburan</button>
+      <button class="tab">Sejarah</button>
+      <button class="tab">Kuliner</button>
+      <button class="tab">Alam</button>
+    </div>
+  </section>
+
+  <section class="destinations">
+    <div class="destination-card">
+      <img src="image/destinasi1.png" alt="Destinasi 1">
+      <div class="destination-info">
+        <div class="info-top">
+          <h3>Pulau Penyengat</h3>
+          <div class="rating-info">
+            <span class="rating">4.9 ⭐</span>
+            <span class="review">(17,1rb Penilaian)</span>
+          </div>
+        </div>
+      </div>
+      <div class="destination-category">Sejarah</div>
+    </div>
+
+    <div class="destination-card">
+      <img src="image/destinasi2.png" alt="Destinasi 2">
+      <div class="destination-info">
+        <div class="info-top">
+          <h3>Lagoy</h3>
+          <div class="rating-info">
+            <span class="rating">4.9 ⭐</span>
+            <span class="review">(17,1rb Penilaian)</span>
+          </div>
+        </div>
+      </div>
+      <div class="destination-category">Hiburan</div>
+    </div>
+
+    <div class="destination-card">
+      <img src="image/destinasi3.png" alt="Destinasi 3">
+      <div class="destination-info">
+        <div class="info-top">
+          <h3>Gunung Bintan</h3>
+          <div class="rating-info">
+            <span class="rating">4.9 ⭐</span>
+            <span class="review">(17,1rb Penilaian)</span>
+          </div>
+        </div>
+      </div>
+      <div class="destination-category">Alam</div>
+    </div>
+
+    <div class="destination-card">
+      <img src="image/destinasi4.png" alt="Destinasi 4">
+      <div class="destination-info">
+        <div class="info-top">
+          <h3>Kelong</h3>
+          <div class="rating-info">
+            <span class="rating">4.9 ⭐</span>
+            <span class="review">(17,1rb Penilaian)</span>
+          </div>
+        </div>
+      </div>
+      <div class="destination-category">Hiburan</div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contact">
+    <div class="footer-title">Jejak Pulau Bintan</div>
+
+    <div class="footer-socials">
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://threads.net" target="_blank"><i class="fab fa-threads"></i></a>
+    </div>
+
+    <div class="footer-links">
+      <a href="about.html">ABOUT US</a> |
+      <a href="#contact">CONTACT</a> |
+      <a href="#">MEMBERSHIP</a> |
+      <a href="#">COMMERCIAL</a> |
+      <a href="#">NEWSLETTER</a> |
+      <a href="#">TERM SERVICE PRIVACY POLICY</a> |
+      <a href="#">DO NOT SELL PERSONAL INFO</a>
+    </div>
+
+    <div class="footer-copyright">
+      © 2025 Jejak Pulau Bintan
+    </div>
+  </footer>
+
+</body>
+</html>
