@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: #f4f4f4;
+    color: #333;
+  }
+  
+  /* ================= NAVBAR =================== */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0%;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Logo */
+  .logo-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    height: 50px;
+    margin-right: 10px;
+    filter: drop-shadow(0 0 0 black) drop-shadow(0 0 0 black) drop-shadow(0 0 0 black) drop-shadow(0 0 0 black); 
+  }
+  
+  .logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  /* Navbar Menu */
+  .navbar {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .nav-link {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+  }
+  
+  /* Login Button */
+  .login-btn {
+    display: inline-block;
+    width: 132px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    background-color: #030321;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: normal;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    margin-left: 40px;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none; /* hilangkan underline */
+    
+  }
+
+/* LOGIN CARD */
+.login-container {
+    background: white;
+    width: 500px;
+    height: 600px;
+    margin: 50px auto 50px auto;
+    padding: 40px 35px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  .login-title {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #000;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 50px;
+  }
+  
+  .input-wrapper {
+    margin-bottom: 30px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    background-color: #F1F1F1;
+    border: 1px solid #878484;
+    border-radius: 8px;
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    display: block;
+    box-sizing: border-box;
+  }
+  
+  .register-text {
+    display: flex;
+    justify-content: left;
+    gap: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    margin-left: 8px;
+  }
+  
+  .register-text .not-registered {
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .register-text .create-account {
+    color: rgba(25, 28, 238, 0.7);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .register-text .create-account:hover {
+    color: #191CEE;
+    text-decoration: underline;
+  }
+  
+  .form-text {
+    width: 430.1px;
+    margin: 8px auto 0;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    margin-left: 8px;
+  }
+  
+  .note-text {
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .link-text {
+    color: rgba(25, 28, 238, 0.7);
+    text-decoration: none;
+  }
+  
+  .login-btn-main {
+    width: 121.53px;
+    height: 45px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin: 50px auto 40px auto;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .social-login {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+  }
+  
+  .social-login img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .social-login img:hover {
+    transform: scale(1.1);
+  }
+  
+  /*========================= FOOTER =========================*/
+  .footer {
+    background-color: #030321;
+    padding: 60px 60px 30px 60px;
+    color: white;
+  }
+  
+  .footer-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800; /* ExtraBold */
+    font-size: 24px;
+    color: #FFFFFF;
+  }
+  
+  .footer-socials i {
+    margin-top: 24px;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-right: 20px;
+    transition: color 0.3s;
+  }
+  
+  .footer-socials i:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  .footer-links {
+    margin-top: 24px; /* Jarak setelah Icon Sosial */
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 5px;
+  }
+  
+  .footer-links a:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  .footer-copyright {
+    margin-top: 24px; /* Jarak setelah Menu Links */
+    font-family: 'Playfair Display', serif;
+    font-weight: 500; /* Medium */
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+  }

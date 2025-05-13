@@ -1,0 +1,213 @@
+/* style.css dan register.css */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: #f4f4f4;
+    color: #333;
+  }
+  
+  /* ================= NAVBAR =================== */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0%;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Logo */
+  .logo-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    height: 50px;
+    margin-right: 10px;
+    filter: drop-shadow(0 0 0 black) drop-shadow(0 0 0 black) drop-shadow(0 0 0 black) drop-shadow(0 0 0 black); 
+  }
+  
+  .logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  /* Navbar Menu */
+  .navbar {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .nav-link {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+  }
+  
+  /* Login Button */
+.login-btn {
+    display: inline-block;
+    width: 132px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    background-color: #030321;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: normal;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    margin-left: 40px;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none; /* hilangkan underline */
+    
+  }
+
+  /* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #eaeaea;
+  }
+  
+  .register-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .register-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 40px;
+    width: 500px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .register-title {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .register-form input[type="text"],
+  .register-form input[type="email"],
+  .register-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #999;
+    background-color: #f1f1f1;
+    font-size: 14px;
+    font-family: 'lora', serif;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    margin-left: 8px;
+  }
+  
+  .register-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 10px auto 0 auto;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+/*========================= FOOTER =========================*/
+.footer {
+  background-color: #030321;
+  padding: 60px 60px 30px 60px;
+  color: white;
+}
+
+.footer-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 800; /* ExtraBold */
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.footer-socials i {
+  margin-top: 24px;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 20px;
+  transition: color 0.3s;
+}
+
+.footer-socials i:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-links {
+  margin-top: 24px; /* Jarak setelah Icon Sosial */
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 5px;
+}
+
+.footer-links a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-copyright {
+  margin-top: 24px; /* Jarak setelah Menu Links */
+  font-family: 'Playfair Display', serif;
+  font-weight: 500; /* Medium */
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
