@@ -211,3 +211,62 @@ body {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.8);
 }
+
+@media (max-width: 768px) {
+  .login-container,
+  .register-card {
+    width: 90%;
+    height: auto;
+    padding: 30px 20px;
+    margin: 40px auto;
+  }
+
+  .login-title,
+  .register-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .form-text,
+  .register-text {
+    flex-direction: column;
+    gap: 4px;
+    font-size: 12px;
+    align-items: flex-start;
+  }
+
+  .login-btn-main,
+  .register-btn {
+    width: 100%;
+    font-size: 14px;
+    height: 42px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .login-btn {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .footer {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-links {
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
