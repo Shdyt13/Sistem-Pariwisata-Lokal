@@ -120,6 +120,8 @@
       background-color: #03011F;
       color: white;
       align-items: center;
+      justify-content: center;
+      margin: 0 auto;
     }
     
     .section.reverse {
@@ -136,6 +138,8 @@
     
     .text {
       width: 50%;
+      text-align: justify;
+      
     }
     
     .text h2 {

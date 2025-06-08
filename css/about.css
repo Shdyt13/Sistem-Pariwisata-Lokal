@@ -1,42 +1,80 @@
 /* ========== Shared Layout Section (About, Vision, Mission) ========== */
 .split-section {
   display: flex;
+  flex-direction: column; /* Default to column for mobile */
   align-items: center;
-  justify-content: space-between;
-  padding: 100px 150px;
-  gap: 50px;
+  padding: 60px 20px; /* Reduced padding for mobile */
+  gap: 30px;
   font-family: 'Playfair Display', serif;
   color: #000;
 }
 
+/* Desktop layout */
+@media (min-width: 992px) {
+  .split-section {
+    flex-direction: row; /* Row layout for desktop */
+    padding: 100px 150px;
+    gap: 50px;
+  }
+}
+
 .split-section .left {
   flex: 1;
-  max-width: 25%;
+  max-width: 100%; /* Full width on mobile */
+  text-align: center; /* Center align for mobile */
+}
+
+@media (min-width: 992px) {
+  .split-section .left {
+    max-width: 25%; /* Original width for desktop */
+    text-align: left; /* Left align for desktop */
+  }
 }
 
 .split-section .right {
-  flex: 3;
+  flex: 1;
+  width: 100%; /* Full width on mobile */
   display: flex;
-  justify-content: center; /* Center image horizontally */
+  justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 992px) {
+  .split-section .right {
+    flex: 3;
+  }
 }
 
 /* Judul di kiri */
 .split-section .left h1,
 .split-section .left h2 {
-  font-size: 28px;
+  font-size: 24px; /* Smaller font for mobile */
   font-weight: 700;
   color: #fff;
-  margin: 0;
+  margin: 0 0 20px 0; /* Added bottom margin */
+}
+
+@media (min-width: 768px) {
+  .split-section .left h1,
+  .split-section .left h2 {
+    font-size: 28px; /* Original size for larger screens */
+  }
 }
 
 /* Konten kanan */
 .split-section .right p,
 .split-section .right ul {
-  font-size: 18px;
+  font-size: 16px; /* Smaller font for mobile */
   font-family: 'Lora', serif;
   color: #000;
   line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .split-section .right p,
+  .split-section .right ul {
+    font-size: 18px; /* Original size for larger screens */
+  }
 }
 
 .split-section .right ul {
@@ -46,41 +84,82 @@
 
 .split-section .right ul li {
   margin-bottom: 12px;
+  position: relative;
+  padding-left: 25px; /* Space for custom bullet */
+}
+
+.split-section .right ul li:before {
+  content: "•";
+  color: #030321;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
 }
 
 /* Section Backgrounds */
 .about-section {
-  background: url('../image/about_bg.png') center center/cover no-repeat;
   background: white;
 }
 
 .vision-section {
   background: url('../image/ourvision_bg.png') center center/cover no-repeat;
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding: 60px 20px; /* Adjusted padding for mobile */
 }
 
 .mission-section {
   background: url('../image/ourmission_bg.png') center center/cover no-repeat;
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding: 60px 20px; /* Adjusted padding for mobile */
+}
+
+@media (min-width: 992px) {
+  .vision-section,
+  .mission-section {
+    padding: 130px 150px; /* Original padding for desktop */
+  }
 }
 
 /* About Illustration Styling */
 .about-section .right img {
   width: 100%;
-  max-width: 500px; /* Ukuran gambar diperbesar */
+  max-width: 400px; /* Slightly smaller max-width for mobile */
   height: auto;
   display: block;
   object-fit: contain;
 }
 
+@media (min-width: 768px) {
+  .about-section .right img {
+    max-width: 500px; /* Original size for larger screens */
+  }
+}
+
 /* Judul Kotak Warna */
 .section-title {
   background-color: #030321;
-  padding: 10px 20px;
+  padding: 8px 15px; /* Smaller padding for mobile */
   border-radius: 8px;
   color: #fff;
   display: inline-block;
   font-family: 'Playfair Display', serif;
+  font-size: 18px; /* Smaller font for mobile */
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    padding: 10px 20px; /* Original padding for larger screens */
+    font-size: 20px; /* Original font size */
+  }
+}
+
+/* Additional mobile optimizations */
+@media (max-width: 576px) {
+  .split-section .right ul li {
+    font-size: 15px; /* Even smaller font for very small devices */
+    padding-left: 20px;
+  }
+  
+  .split-section {
+    padding: 40px 15px; /* More compact padding */
+  }
 }
