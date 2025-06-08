@@ -307,8 +307,11 @@ body {
   font-family: 'Lora', serif;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 80px;
   padding: 65px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .destination-card {
