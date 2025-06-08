@@ -139,7 +139,7 @@
     .text {
       width: 50%;
       text-align: justify;
-      
+
     }
     
     .text h2 {
@@ -190,6 +190,23 @@
       text-decoration: none; /* hilangkan underline */
     }
     
+    .lihat-komentar-link {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    }
+
+    .lihat-komentar-link:hover {
+      color: #ccc; /* ungu atau warna khas lainnya */
+      text-decoration: underline;
+    }
+
     .comment-box {
       margin-top: 25px;
       padding: 20px 60px;
