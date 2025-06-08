@@ -1,0 +1,86 @@
+/* ========== Shared Layout Section (About, Vision, Mission) ========== */
+.split-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 150px;
+  gap: 50px;
+  font-family: 'Playfair Display', serif;
+  color: #000;
+}
+
+.split-section .left {
+  flex: 1;
+  max-width: 25%;
+}
+
+.split-section .right {
+  flex: 3;
+  display: flex;
+  justify-content: center; /* Center image horizontally */
+  align-items: center;
+}
+
+/* Judul di kiri */
+.split-section .left h1,
+.split-section .left h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+/* Konten kanan */
+.split-section .right p,
+.split-section .right ul {
+  font-size: 18px;
+  font-family: 'Lora', serif;
+  color: #000;
+  line-height: 1.6;
+}
+
+.split-section .right ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.split-section .right ul li {
+  margin-bottom: 12px;
+}
+
+/* Section Backgrounds */
+.about-section {
+  background: url('../image/about_bg.png') center center/cover no-repeat;
+  background: white;
+}
+
+.vision-section {
+  background: url('../image/ourvision_bg.png') center center/cover no-repeat;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.mission-section {
+  background: url('../image/ourmission_bg.png') center center/cover no-repeat;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+/* About Illustration Styling */
+.about-section .right img {
+  width: 100%;
+  max-width: 500px; /* Ukuran gambar diperbesar */
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* Judul Kotak Warna */
+.section-title {
+  background-color: #030321;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #fff;
+  display: inline-block;
+  font-family: 'Playfair Display', serif;
+}
