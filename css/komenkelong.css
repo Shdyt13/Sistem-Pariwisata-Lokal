@@ -1,0 +1,218 @@
+/* ======= Reset dan Font ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* ======= Header ======= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0%;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 50px;
+  margin-right: 10px;
+  filter: drop-shadow(0 0 0 black) drop-shadow(0 0 0 black) drop-shadow(0 0 0 black) drop-shadow(0 0 0 black); 
+}
+
+.logo-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-family: 'Playfair Display', serif;
+}
+
+.navbar a {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+}
+
+.login-btn {
+  display: inline-block;
+  width: 132px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  background-color: #030321;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: normal;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  margin-left: 40px;
+  font-family: 'Playfair Display', serif;
+  text-decoration: none; /* hilangkan underline */
+}
+
+/* ======= Hero Section ======= */
+.hero-section {
+      background-image: url('kelongbg.jpg');
+      height: 400px;
+      background-size: cover;
+      background-position: 40% 40%;
+      position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      filter: brightness(70%);
+}
+
+.hero-section h1 {
+    font-size: 80px;
+    font-family: 'Playfair Display', serif;
+    padding: 20px 40px;
+    border-radius: 10px;
+    filter: brightness(120%);
+    color: #ffffff; /* putih bersih */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* shadow lebih tebal dan gelap */
+
+}
+
+/* ======= Rating & Komentar ======= */
+.rating-section {
+  background: white;
+  padding: 30px 60px;
+  text-align: left;
+}
+
+.rating-section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.stars {
+  color: gold;
+  font-size: 18px;
+}
+
+.comment-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.comment-box input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #999;
+  border-radius: 20px;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+}
+
+.comment-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+.comment-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.comment-item .username {
+  font-weight: bold;
+  display: block;
+}
+
+.comment-item .stars {
+  color: gold;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+/* ======= Footer ======= */
+.footer {
+  background-color: #030321;
+  padding: 60px;
+  color: white;
+}
+
+.footer-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-socials i {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 20px;
+}
+
+.footer-links {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .rating-section {
+    padding: 20px;
+  }
+
+  .comment-box input {
+    font-size: 14px;
+  }
+
+  .comment-item img {
+    width: 40px;
+    height: 40px;
+  }
+}

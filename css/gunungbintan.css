@@ -12,10 +12,6 @@
       color: #333;
     }
     
-    a {
-      text-decoration: none;
-    }
-    
     /* HEADER */
     .header {
       display: flex;
@@ -48,20 +44,21 @@
       color: #000;
     }
     
-    .navbar {
+    .navbar{
       display: flex;
       align-items: center;
       gap: 40px;
       font-family: 'Playfair Display', serif;
+      font-weight: bold;
     }
     
-    .nav-link {
+    .nav-link{
      font-family: 'Playfair Display', serif;
      font-size: 16px;
      color: #000000;
      text-decoration: none;
      position: relative;
-     font-weight: 500;
+     font-weight: bold;
     }
     
     .login-btn {
