@@ -9,6 +9,49 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.querySelector(".register-form");
+      const emailInput = form.querySelector('input[type="email"]');
+      const passwordInput = form.querySelector('input[placeholder="Password*"]');
+      const confirmPasswordInput = form.querySelector('input[placeholder="Confirm Password*"]');
+  
+      form.addEventListener("submit", function (event) {
+        const emailValue = emailInput.value.trim();
+        const passwordValue = passwordInput.value.trim();
+        const confirmPasswordValue = confirmPasswordInput.value.trim();
+  
+        // Validasi email format
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(emailValue)) {
+          event.preventDefault();
+          alert("Harap masukkan alamat email yang valid.");
+          return;
+        }
+  
+        // Validasi password:
+        // - Minimal 8 karakter
+        // - Hanya huruf dan angka
+        // - Mengandung minimal satu huruf kapital atau angka
+        const minLength = passwordValue.length >= 8;
+        const isAlphanumeric = /^[A-Za-z0-9]+$/.test(passwordValue);
+        const hasCapitalOrDigit = /[A-Z0-9]/.test(passwordValue);
+  
+        if (!minLength || !isAlphanumeric || !hasCapitalOrDigit) {
+          event.preventDefault();
+          alert("Password harus minimal 8 karakter, hanya berisi huruf dan angka, serta mengandung setidaknya satu huruf kapital atau angka.");
+          return;
+        }
+  
+        // Cek kesamaan password dan konfirmasi password
+        if (passwordValue !== confirmPasswordValue) {
+          event.preventDefault();
+          alert("Password dan konfirmasi password tidak cocok.");
+          return;
+        }
+      });
+    });
+  </script>      
 </head>
 
 <body>

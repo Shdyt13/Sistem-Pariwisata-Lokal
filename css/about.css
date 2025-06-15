@@ -207,3 +207,54 @@
 .member-image:hover .member-name {
   bottom: 0; /* Fully reveal the name */
 }
+
+/* Comment Section Styling */
+.comment-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.rating-box {
+  margin-bottom: 15px;
+}
+
+.rating-box label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.rating-box select {
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.comment-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.comment-box input {
+  width: 60%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.send-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #030321;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-btn:hover {
+  background-color: #444;
+}

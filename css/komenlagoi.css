@@ -114,24 +114,55 @@ body {
   margin-bottom: 20px;
 }
 
+.rating-section select {
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
 .stars {
   color: gold;
   font-size: 18px;
 }
 
+.stars i {
+  font-size: 24px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.stars i:hover {
+  color: gold;
+}
+
 .comment-box {
   display: flex;
+  gap: 10px;
   align-items: center;
-  margin-bottom: 30px;
 }
 
 .comment-box input {
-  width: 100%;
-  padding: 12px 20px;
-  border: 1px solid #999;
+  width: 60%;
+  padding: 10px;
   border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.send-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #030321;
+  color: white;
   font-size: 16px;
-  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-btn:hover {
+  background-color: #444;
 }
 
 .comment-item {

@@ -29,9 +29,19 @@
   </section>
 
   <section class="rating-section">
-    <p>Rating : 4.3 / 5.0 <span class="stars">⭐⭐⭐⭐⭐</span></p>
+    <p>Rating : 
+      <span class="stars" id="ratingStars">
+        <i class="fa fa-star" data-value="1"></i>
+        <i class="fa fa-star" data-value="2"></i>
+        <i class="fa fa-star" data-value="3"></i>
+        <i class="fa fa-star" data-value="4"></i>
+        <i class="fa fa-star" data-value="5"></i>
+      </span>
+      <span id="selectedRating">0</span>/5
+    </p>
     <div class="comment-box">
-      <input type="text" id="commentInput" placeholder="Tambahkan Komentar . . .">
+      <input type="text" id="commentInput" placeholder="Tambahkan Komentar . . ." />
+      <button class="send-btn">Send</button>
     </div>
     <div class="comment-list" id="commentList">
       <!-- Komentar akan ditambahkan lewat JavaScript -->
@@ -64,6 +74,9 @@
   <script>
     const commentInput = document.getElementById('commentInput');
     const commentList = document.getElementById('commentList');
+    const ratingStars = document.getElementById('ratingStars');
+    const selectedRating = document.getElementById('selectedRating');
+    const sendButton = document.querySelector('.send-btn');
 
     const sampleComments = [
       { name: 'Narutong', stars: 5, comment: 'Komentar, Rating Dan segala macam' },
@@ -88,9 +101,26 @@
       });
     }
 
-    commentInput.addEventListener('keypress', function(e) {
-      if (e.key === 'Enter' && commentInput.value.trim()) {
-        sampleComments.unshift({ name: 'Username', stars: 5, comment: commentInput.value });
+    ratingStars.addEventListener('mouseover', function (e) {
+      if (e.target.classList.contains('fa-star')) {
+        const value = e.target.getAttribute('data-value');
+        Array.from(ratingStars.children).forEach(star => {
+          star.style.color = star.getAttribute('data-value') <= value ? 'gold' : '#ccc';
+        });
+      }
+    });
+
+    ratingStars.addEventListener('click', function (e) {
+      if (e.target.classList.contains('fa-star')) {
+        const value = e.target.getAttribute('data-value');
+        selectedRating.textContent = value;
+      }
+    });
+
+    sendButton.addEventListener('click', function () {
+      if (commentInput.value.trim()) {
+        const rating = parseInt(selectedRating.textContent);
+        sampleComments.unshift({ name: 'Username', stars: rating, comment: commentInput.value });
         renderComments();
         commentInput.value = '';
       }
